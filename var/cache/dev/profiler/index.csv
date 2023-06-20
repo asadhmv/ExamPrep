@@ -1,0 +1,14 @@
+6f4d9e,127.0.0.1,GET,https://127.0.0.1:8000/,1687251117,,404
+88d31f,127.0.0.1,GET,https://127.0.0.1:8000/login,1687251122,6c64cf,500
+6c64cf,127.0.0.1,GET,https://127.0.0.1:8000/login,1687251122,,500
+6111f3,127.0.0.1,GET,https://127.0.0.1:8000/login,1687252384,543d42,500
+543d42,127.0.0.1,GET,https://127.0.0.1:8000/login,1687252384,,500
+15dd3f,127.0.0.1,GET,https://127.0.0.1:8000/,1687252758,,404
+adad8d,127.0.0.1,GET,https://127.0.0.1:8000/login,1687252762,,200
+cd84ae,127.0.0.1,POST,https://127.0.0.1:8000/login,1687252776,,302
+891f0a,127.0.0.1,GET,https://127.0.0.1:8000/admin,1687252776,,200
+f456c9,127.0.0.1,GET,https://127.0.0.1:8000/build/css/css/all.css,1687252776,6706ac,404
+6706ac,127.0.0.1,GET,https://127.0.0.1:8000/build/css/css/all.css,1687252776,,404
+ec89de,127.0.0.1,GET,https://127.0.0.1:8000/admin?crudAction=index&crudControllerFqcn=App%5CController%5CAdmin%5CModuleCrudController,1687252779,,200
+abdc6a,127.0.0.1,GET,https://127.0.0.1:8000/build/css/css/all.css,1687252779,6a9747,404
+6a9747,127.0.0.1,GET,https://127.0.0.1:8000/build/css/css/all.css,1687252779,,404
