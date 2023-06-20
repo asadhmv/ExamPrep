@@ -1,9 +1,14 @@
 Etudiants: Students
-Filieres: Sectors
-Users: Users
-Etudiant: Student
-Filiere: Sector
+Modules: Modules
+Utilisateur: User
 User: User
+Students: Students
+Filiere: Sector
+Matieres: Subjects
+Subjects: Subjects
+Quizs: Quizs
+Notes de Quiz: QuizMarks
+QuizMarks: QuizMarks
 Dashboard: Exams Management
 security:
   reset-password: Reset Password

@@ -1,11 +1,20 @@
 
 Etudiants: Estudiantes
-Filieres: Ramas
+
 Users: Usuarios
 Etudiant: Estudiante
-Filiere: Rama
+Matieres: Asignatura
+Notes de Quiz: Calificaciones de los quizzes 
+Students: Estudiantes
+Student: Estudiante
+Module: Rama
+Modules: Ramas
+Utilisateur: Usuario
 User: Usuario
 Dashboard: Gestion de examenes
+Subjects: Asignatura
+Quizs: Quizzes
+QuizMarks: Calificaciones de los quizzes 
 security:
   reset-password: Recuperar contraseña
   forgetten-password: Olbido mi contraseña 

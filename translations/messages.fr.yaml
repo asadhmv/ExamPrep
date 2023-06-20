@@ -1,10 +1,14 @@
 
+Students: Etudiants
 Etudiants: Etudiants
 Filieres: Filières
-Users: Utilisateurs
-Etudiant: Etudiant
-Filiere: Filière
+Subjects: Matieres
+Matiers: Matiers
+QuizMarks: Notes de quiz
+Notes de quiz: Notes de quiz
 User: Utilisateur
+Utilisateur: Utilisateur
+Exams Management: Gestion des exams
 Dashboard: Gestion des examens
 security:
   reset-password: Récupérer le mot de passe

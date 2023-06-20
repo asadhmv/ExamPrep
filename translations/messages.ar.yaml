@@ -1,9 +1,17 @@
-Etudiant: طالب
+Etudiants: طالب
+Students:  طالب
 Filiere: شعبة
-Module: المادة
+Modules:  شعبة
+Subjects:  مادة
 Semestre: الأسدوس
+Utilisateur: مستعمل
 User: مستعمل
 Dashboard: تدبير الامتحانات
+Matieres: مادة
+Quizs: مسابقة
+Notes de Quiz: نقاط المسابقة
+QuizMarks: نقاط المسابقة
+Ressources: موارد
 security:
   reset-password: استعادة كلمة المرور
   forgetten-password: نسيت كلمة السر 
