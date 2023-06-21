@@ -70,6 +70,6 @@ class __TwigTemplate_7533f0ef3fbd7dd56fdda3582c66ed23 extends Template
 
     public function getSourceContext()
     {
-        return new Source("{% extends '@!EasyAdmin/page/content.html.twig' %}", "@EasyAdmin/page/content.html.twig", "/home/shmahma/ExamPrep/templates/bundles/EasyAdminBundle/page/content.html.twig");
+        return new Source("{% extends '@!EasyAdmin/page/content.html.twig' %}", "@EasyAdmin/page/content.html.twig", "/home/hiba/Bureau/ExamPrep/templates/bundles/EasyAdminBundle/page/content.html.twig");
     }
 }

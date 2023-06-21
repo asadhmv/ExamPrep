@@ -595,6 +595,6 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 \t\t</div>
 \t</a>
 {% endblock header_logo %}
-", "@EasyAdmin/layout.html.twig", "/home/shmahma/ExamPrep/templates/bundles/EasyAdminBundle/layout.html.twig");
+", "@EasyAdmin/layout.html.twig", "/home/hiba/Bureau/ExamPrep/templates/bundles/EasyAdminBundle/layout.html.twig");
     }
 }

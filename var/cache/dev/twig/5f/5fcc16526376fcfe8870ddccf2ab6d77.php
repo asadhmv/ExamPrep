@@ -73,6 +73,6 @@ class __TwigTemplate_b787f43d99560361a8e5a5043d16a30c extends Template
         return new Source("{% extends '@!EasyAdmin/menu.html.twig' %}
 
 
-", "@EasyAdmin/menu.html.twig", "/home/shmahma/ExamPrep/templates/bundles/EasyAdminBundle/menu.html.twig");
+", "@EasyAdmin/menu.html.twig", "/home/hiba/Bureau/ExamPrep/templates/bundles/EasyAdminBundle/menu.html.twig");
     }
 }

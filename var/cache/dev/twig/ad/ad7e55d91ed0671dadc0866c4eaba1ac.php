@@ -75,6 +75,6 @@ class __TwigTemplate_fdb5f4f93d6dfcfb31b9f2d2a468b7d2 extends Template
     <path d=\"M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727\"></path>
     <path d=\"M3 6.727a11.05 11.05 0 0 1 2.792 -3.727\"></path>
 </svg>
-", "@WebProfiler/Icon/notifier.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/notifier.svg");
+", "@WebProfiler/Icon/notifier.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/notifier.svg");
     }
 }

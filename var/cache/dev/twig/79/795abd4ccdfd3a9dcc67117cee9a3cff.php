@@ -81,6 +81,6 @@ class __TwigTemplate_3df9220b46ca56a069e0433f1e4c578f extends Template
 {% for encore_asset in assets %}
     {{ ea_call_function_if_exists('encore_entry_script_tags', encore_asset.value, encore_asset.webpackPackageName, encore_asset.webpackEntrypointName, encore_asset.htmlAttributes) }}
 {% endfor %}
-", "@EasyAdmin/includes/_encore_script_tags.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_encore_script_tags.html.twig");
+", "@EasyAdmin/includes/_encore_script_tags.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/includes/_encore_script_tags.html.twig");
     }
 }

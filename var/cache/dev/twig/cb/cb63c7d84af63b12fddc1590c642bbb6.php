@@ -72,6 +72,6 @@ class __TwigTemplate_6e681cd00dce9cab874bd1feafe1fd35 extends Template
 {# @var field \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\FieldDto #}
 {# @var entity \\EasyCorp\\Bundle\\EasyAdminBundle\\Dto\\EntityDto #}
 {{ field.formattedValue }}
-", "@EasyAdmin/crud/field/generic.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/generic.html.twig");
+", "@EasyAdmin/crud/field/generic.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/generic.html.twig");
     }
 }

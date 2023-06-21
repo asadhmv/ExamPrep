@@ -102,6 +102,6 @@ class __TwigTemplate_83e9981afc9f0668b874f36e4ab0af26 extends Template
         {{ field.formattedValue }}
     {% endif %}
 {% endif %}
-", "@EasyAdmin/crud/field/association.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/association.html.twig");
+", "@EasyAdmin/crud/field/association.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/association.html.twig");
     }
 }

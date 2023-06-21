@@ -138,6 +138,6 @@ class __TwigTemplate_bb6bc2453e6fecd63841ba666f004b54 extends Template
         <button class=\"btn btn-primary\">Reset password</button>
     {{ form_end(resetForm) }}
 {% endblock %}
-", "reset_password/reset.html.twig", "/home/shmahma/ExamPrep/templates/reset_password/reset.html.twig");
+", "reset_password/reset.html.twig", "/home/hiba/Bureau/ExamPrep/templates/reset_password/reset.html.twig");
     }
 }

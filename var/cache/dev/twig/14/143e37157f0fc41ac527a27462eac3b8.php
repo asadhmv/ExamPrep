@@ -104,6 +104,6 @@ class __TwigTemplate_0d3b69f3ca2e9ed2c4d2c829651c1702 extends Template
 {% if field.customOptions.get('showName') %}
     {{ field.formattedValue.name }}
 {% endif %}
-", "@EasyAdmin/crud/field/currency.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/currency.html.twig");
+", "@EasyAdmin/crud/field/currency.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/currency.html.twig");
     }
 }

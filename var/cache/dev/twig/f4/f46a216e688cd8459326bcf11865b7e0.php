@@ -85,6 +85,6 @@ class __TwigTemplate_58cc3b6513c329b7e276a6ea3a597666 extends Template
     <path d=\"M20 12h2\" />
     <path d=\"M12 20v2\" />
 </svg>
-", "@WebProfiler/Icon/settings-theme-light.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-theme-light.svg");
+", "@WebProfiler/Icon/settings-theme-light.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/settings-theme-light.svg");
     }
 }

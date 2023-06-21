@@ -160,6 +160,6 @@ class __TwigTemplate_a5294eae9fa2aac4482e7770917d58d5 extends Template
 {% endif %}\t
 {% block javascripts %}
      {{ encore_entry_script_tags('roles') }}
-{% endblock %}", "changeRole.html.twig", "/home/shmahma/ExamPrep/templates/changeRole.html.twig");
+{% endblock %}", "changeRole.html.twig", "/home/hiba/Bureau/ExamPrep/templates/changeRole.html.twig");
     }
 }

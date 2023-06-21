@@ -90,6 +90,6 @@ class __TwigTemplate_b6718cf766525c6ea2deff9a9ab76c09 extends Template
 {% else %}
     <span title=\"{{ field.value }}\">{{ field.formattedValue|raw }}</span>
 {% endif %}
-", "@EasyAdmin/crud/field/text.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/text.html.twig");
+", "@EasyAdmin/crud/field/text.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/text.html.twig");
     }
 }

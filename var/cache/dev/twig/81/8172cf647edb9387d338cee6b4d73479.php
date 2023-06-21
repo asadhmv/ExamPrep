@@ -204,6 +204,6 @@ class __TwigTemplate_0decca87d36cb716f1bfb05f768e3593 extends Template
 {% block javascripts %}
      {{ encore_entry_script_tags('langues') }}
 {% endblock %}
-", "changeLangue.html.twig", "/home/shmahma/ExamPrep/templates/changeLangue.html.twig");
+", "changeLangue.html.twig", "/home/hiba/Bureau/ExamPrep/templates/changeLangue.html.twig");
     }
 }

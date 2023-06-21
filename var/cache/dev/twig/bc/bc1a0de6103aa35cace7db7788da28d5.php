@@ -169,6 +169,6 @@ class __TwigTemplate_bfcb9b1e449d162cc104f19eedd4560d extends Template
         <button class=\"btn btn-primary\">Send password reset email</button>
     {{ form_end(requestForm) }}
 {% endblock %}
-", "reset_password/request.html.twig", "/home/shmahma/ExamPrep/templates/reset_password/request.html.twig");
+", "reset_password/request.html.twig", "/home/hiba/Bureau/ExamPrep/templates/reset_password/request.html.twig");
     }
 }

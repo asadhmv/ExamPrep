@@ -70,6 +70,6 @@ class __TwigTemplate_b51cdb3ef23e01b39254563d51d4b7ba extends Template
 
     public function getSourceContext()
     {
-        return new Source("{% extends '@!EasyAdmin/crud/detail.html.twig' %}", "@EasyAdmin/crud/detail.html.twig", "/home/shmahma/ExamPrep/templates/bundles/EasyAdminBundle/crud/detail.html.twig");
+        return new Source("{% extends '@!EasyAdmin/crud/detail.html.twig' %}", "@EasyAdmin/crud/detail.html.twig", "/home/hiba/Bureau/ExamPrep/templates/bundles/EasyAdminBundle/crud/detail.html.twig");
     }
 }

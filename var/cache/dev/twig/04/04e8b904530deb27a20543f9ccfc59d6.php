@@ -443,6 +443,6 @@ class __TwigTemplate_3d6a7ef76f315f6554d6fa2e5732e73d extends Template
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/shmahma/ExamPrep/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

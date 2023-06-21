@@ -103,6 +103,6 @@ class __TwigTemplate_71a7392775cf19e0e335202afa5e78ac extends Template
         {{ render_as_html ? field.formattedValue|raw : field.formattedValue|striptags }}
     </span>
 {% endif %}
-", "@EasyAdmin/crud/field/textarea.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/textarea.html.twig");
+", "@EasyAdmin/crud/field/textarea.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/textarea.html.twig");
     }
 }

@@ -2,9 +2,121 @@
 
 {% block title %}{{"security.login"|trans}}
 {% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #fff;
+        }
+        .js{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        
+        h1{
+            color:#fff;
+            font-weight: bold;
+            margin-top: 0;
+            text-align: center;
+            position: absolute;
+            top:0%;
+            left: 33%;
+            transform: translate(-50%; -50%);
+        }
+        .des_inputs{
+            position: relative;
+            width: 400px;
+            height: 500px;
+            background: #000;
+            box-shadow: 0 0 50px #0ef;
+            border-radius: 20px;
+            padding: 40px;
+            color: #fff;
+            overflow: hidden;
+            position: absolute;
+            top:20%;
+            left: 35%;
+            transform: translate(-50%; -50%);
+        }
+       
+        .input-group mb-3{
+            margin-top: 0;
+            text-align: center;
+            position: absolute;
+            top:2%;
+            left: 30%;
+            transform: translate(-50%; -50%);
+        }
+
+        .input-group-prepend{
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group-text{
+            background-color: transparent;
+            border-color: transparent;
+            color: #fff;
+        }
+       
+        .login-link {
+            background: linear-gradient(to right, #FFFF00, #FFA500);
+            display: inline-block;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        p.login-txt{
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: 1s ease-in-out;
+            text-align: center;
+            margin-top: 20px;
+        }
+		.password-link{
+			background: linear-gradient(to right, #008000, #008080);
+            display: inline-block;
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+		}
+        .input-group.mb-3{
+            margin-bottom: 0;
+        }
+        .form-check-label {
+            color: #fff; font-size: 0.9rem;
+        } .
+        btn-primary.btn-lg {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+        .text-center.text-lg-start {
+            text-align: center;
+        }
+       
+       
+
+       
+
+    </style>
+{% endblock %}
 
 {% block body  %}
-
+	<div class="js">
+        <canvas id= "canvas_login"> Votre navigateur ne prends pas en charge l'animation</canvas>
+            {% block javascripts %}
+                    {{ encore_entry_script_tags('anim')}}
+            {% endblock %}
+    </div>
 
 	<form method="post" >
 		{% if error %}
@@ -17,9 +129,10 @@
 			<div class="container-fluid h-custom" style="background: linear-gradient(red, white);">
 				<div class="row d-flex justify-content-center align-items-center h-100">
 					<div class="col-md-9 col-lg-6 col-xl-5">
-						<img src="{{asset("build/images/draw2.png")}}" class="img-fluid" alt="Sample image">
+						<!--img src="{{asset("build/images/draw2.png")}}" class="img-fluid" alt="Sample image"-->
 					</div>
-					<div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+					<div class="des_inputs">
+                        <h1>Login</h1>
 						<form>
 
 							<div class="input-group mb-3">
@@ -73,16 +186,15 @@
 								<!-- <p class="small fw-bold mt-2 pt-1 mb-0">{{'security.dont-have-account'|trans}}
 									<a href="register" class="link-danger">{{'security.register'|trans}}</a>
 								</p> -->
-								
 							</div>
-
+							<p class= "login-txt">Did you forget your password ?<a  href="{{path('app_forgot_password_request')}}" class= "password-link">Click here to reset</a></p>
+			
+							<p class="login-txt"> you don't have an account? <a href="{{path('app_register')}}" class= "login-link">click here to register </a></p>
 
 						</div>
 					</div>
 				</div>
-			<p>Did you forget your password ?<a  href="{{path('app_forgot_password_request')}}">Click here to reset</a></p>
-			<p>You don't have an account ?<a href="{{path('app_register')}}">click here to register</a></p>
-			</section>
+			
 		</form>
 		
 	{% endblock %}

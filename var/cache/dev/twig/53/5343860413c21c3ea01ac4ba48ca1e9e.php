@@ -72,6 +72,6 @@ class __TwigTemplate_ab764c243473934af69f8f627c62fa71 extends Template
     {
         return new Source("{# @var ea \\EasyCorp\\Bundle\\EasyAdminBundle\\Context\\AdminContext #}
 {% extends '@EasyAdmin/page/content.html.twig' %}
-", "@EasyAdmin/welcome.html.twig", "/home/shmahma/ExamPrep/templates/bundles/EasyAdminBundle/welcome.html.twig");
+", "@EasyAdmin/welcome.html.twig", "/home/hiba/Bureau/ExamPrep/templates/bundles/EasyAdminBundle/welcome.html.twig");
     }
 }

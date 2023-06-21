@@ -127,6 +127,6 @@ class __TwigTemplate_da4f1ddb905302feafacab9104c60d88 extends Template
 
 
 {% endblock %}
-", "please-verify-email.html.twig", "/home/shmahma/ExamPrep/templates/please-verify-email.html.twig");
+", "please-verify-email.html.twig", "/home/hiba/Bureau/ExamPrep/templates/please-verify-email.html.twig");
     }
 }

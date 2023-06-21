@@ -61,6 +61,6 @@ class __TwigTemplate_b11e039720a5b9d1841b43416dcbb253 extends Template
     {
         return new Source("{# this template is rendered when an error or exception occurs while
    trying to get the value of the field (by default nothing is displayed) #}
-", "@EasyAdmin/label/undefined.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/undefined.html.twig");
+", "@EasyAdmin/label/undefined.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/label/undefined.html.twig");
     }
 }

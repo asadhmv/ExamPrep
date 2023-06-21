@@ -77,6 +77,6 @@ class __TwigTemplate_ebb18c11052b6edb0115136d9a32e2be extends Template
     <path d=\"M12 20l4 -9l4 9\"></path>
     <path d=\"M19.1 18h-6.2\"></path>
 </svg>
-", "@WebProfiler/Icon/translation.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/translation.svg");
+", "@WebProfiler/Icon/translation.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/translation.svg");
     }
 }

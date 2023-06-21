@@ -71,6 +71,6 @@ class __TwigTemplate_3c7efdf89ebb3f462dce7c6db47e2bf4 extends Template
     <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>
     <path d=\"M6 6v6a3 3 0 0 0 3 3h10l-4 -4m0 8l4 -4\"></path>
 </svg>
-", "@WebProfiler/Icon/redirect.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/redirect.svg");
+", "@WebProfiler/Icon/redirect.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/redirect.svg");
     }
 }

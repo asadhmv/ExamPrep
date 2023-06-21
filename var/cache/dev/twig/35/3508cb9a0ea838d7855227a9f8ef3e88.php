@@ -94,6 +94,6 @@ class __TwigTemplate_6acf1d2d57007ff38225538790e2fb56 extends Template
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "/home/shmahma/ExamPrep/templates/registration/confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "/home/hiba/Bureau/ExamPrep/templates/registration/confirmation_email.html.twig");
     }
 }

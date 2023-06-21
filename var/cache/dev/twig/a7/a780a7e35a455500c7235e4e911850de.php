@@ -1803,6 +1803,6 @@ class __TwigTemplate_34d2a0c54e7bf73f064f499c899a4666 extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/shmahma/ExamPrep/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

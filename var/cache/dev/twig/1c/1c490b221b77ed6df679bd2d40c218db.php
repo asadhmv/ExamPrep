@@ -87,6 +87,6 @@ class __TwigTemplate_bf2a403243b7e1bb24040d999fbd561b extends Template
     <line x1=\"18\" y1=\"4\" x2=\"18\" y2=\"5\"></line>
     <line x1=\"18\" y1=\"9\" x2=\"18\" y2=\"20\"></line>
 </svg>
-", "@WebProfiler/Icon/config.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/config.svg");
+", "@WebProfiler/Icon/config.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/config.svg");
     }
 }

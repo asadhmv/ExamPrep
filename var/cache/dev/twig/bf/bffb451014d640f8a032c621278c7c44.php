@@ -152,6 +152,6 @@ class __TwigTemplate_04dc83d4835e5ffcf203151b6d769991 extends Template
         </div>
     </div>
 {% endif %}
-", "@EasyAdmin/crud/field/code_editor.html.twig", "/home/shmahma/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
+", "@EasyAdmin/crud/field/code_editor.html.twig", "/home/hiba/Bureau/ExamPrep/vendor/easycorp/easyadmin-bundle/src/Resources/views/crud/field/code_editor.html.twig");
     }
 }

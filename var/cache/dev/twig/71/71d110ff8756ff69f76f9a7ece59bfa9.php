@@ -154,6 +154,6 @@ class __TwigTemplate_383084fac8a669d0c4086ea32bc7e7ba extends Template
     </ul>
 </div>
 {% endblock %}
-", "mailer/index.html.twig", "/home/shmahma/ExamPrep/templates/mailer/index.html.twig");
+", "mailer/index.html.twig", "/home/hiba/Bureau/ExamPrep/templates/mailer/index.html.twig");
     }
 }

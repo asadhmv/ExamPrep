@@ -75,6 +75,6 @@ class __TwigTemplate_c48bb4f4acf695adeced6590d14a9006 extends Template
     <path d=\"M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3\"></path>
     <line x1=\"12\" y1=\"20\" x2=\"12\" y2=\"10\"></line>
 </svg>
-", "@WebProfiler/Icon/twig.svg", "/home/shmahma/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/twig.svg");
+", "@WebProfiler/Icon/twig.svg", "/home/hiba/Bureau/ExamPrep/vendor/symfony/web-profiler-bundle/Resources/views/Icon/twig.svg");
     }
 }

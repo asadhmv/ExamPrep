@@ -192,6 +192,6 @@ class __TwigTemplate_ae3c82f66a463e450d69be7e8be02475 extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/shmahma/ExamPrep/templates/base.html.twig");
+", "base.html.twig", "/home/hiba/Bureau/ExamPrep/templates/base.html.twig");
     }
 }
