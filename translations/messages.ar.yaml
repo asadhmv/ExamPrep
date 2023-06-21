@@ -1,14 +1,25 @@
+ROLE_USER: مستعمل
+ROLE_APOGE: مكتب شؤون الطلاب
+ROLE_ADMIN: مدير
+ROLE_PROF: أستاذ
+ROLE_ETUDIANT: طالب
+ROLE_CHEF: رئيس شعبة
+
+
 Etudiants: طالب
 Students:  طالب
 Filiere: شعبة
 Modules:  شعبة
+Module:  شعبة
 Subjects:  مادة
+Subject:  مادة
 Semestre: الأسدوس
 Utilisateur: مستعمل
 User: مستعمل
 Dashboard: تدبير الامتحانات
 Matieres: مادة
 Quizs: مسابقة
+Quiz:  مسابقة
 Notes de Quiz: نقاط المسابقة
 QuizMarks: نقاط المسابقة
 Ressources: موارد

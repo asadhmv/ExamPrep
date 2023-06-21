@@ -17,6 +17,13 @@
         "/build/755.e2552a6f.js",
         "/build/langues.d956d3ac.js"
       ]
+    },
+    "roles": {
+      "js": [
+        "/build/runtime.2816be4a.js",
+        "/build/755.e2552a6f.js",
+        "/build/roles.88dae33f.js"
+      ]
     }
   }
 }

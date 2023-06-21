@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '79b5e6c636b8cb27d4d68b0e5cf209abc7b56038',
+        'reference' => 'eb0c3a3679c32d32ea6645c36ccdb7539fdf5cc8',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '79b5e6c636b8cb27d4d68b0e5cf209abc7b56038',
+            'reference' => 'eb0c3a3679c32d32ea6645c36ccdb7539fdf5cc8',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -188,7 +188,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../egulias/email-validator',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'fakerphp/faker' => array(
             'pretty_version' => 'v1.23.0',
@@ -233,7 +233,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../nikic/php-parser',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.3',
@@ -888,7 +888,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/mailer',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/maker-bundle' => array(
             'pretty_version' => 'v1.49.0',
@@ -897,7 +897,7 @@
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfony/maker-bundle',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfony/messenger' => array(
             'pretty_version' => 'v6.3.0',
@@ -1320,7 +1320,7 @@
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfonycasts/reset-password-bundle',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'symfonycasts/verify-email-bundle' => array(
             'pretty_version' => 'v1.13.0',
@@ -1329,7 +1329,7 @@
             'type' => 'symfony-bundle',
             'install_path' => __DIR__ . '/../symfonycasts/verify-email-bundle',
             'aliases' => array(),
-            'dev_requirement' => true,
+            'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.1',

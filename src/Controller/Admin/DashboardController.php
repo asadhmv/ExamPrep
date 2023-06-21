@@ -17,13 +17,35 @@ use App\Entity\Ressources;
 use App\Entity\Quizmark;
 use App\Entity\Quiz;
 use App\Entity\Module;
+use Symfony\Component\Security\Core\Security;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class DashboardController extends AbstractDashboardController
 {
+    
+    private RequestStack $rs;
+    private string $current_role;
+
+    public function __construct(RequestStack $requestStack, Security $security)
+    {
+        $this->rs = $requestStack;
+        $first_role = $security->getUser()->getRoles()[0];
+        if($this->rs->getSession()->get('_role')==null)
+            $this->rs->getSession()->set('_role', $first_role);
+  
+        $this->current_role = $this->rs->getSession()->get('_role');
+    }
     #[Route('/admin', name: 'dashboard')]
     public function index(): Response
     {
-        return parent::index();
+        $this->denyAccessUnlessGranted(attribute:"IS_AUTHENTICATED_FULLY");
+        /** @var User $user */
+        $user=$this->getUser();
+        return match($user->isVerified()){
+            true=>parent::index(),
+            false=>$this->render(view:"please-verify-email.html.twig"),
+        };
+        #return parent::index();
 
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
@@ -66,11 +88,11 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
-        yield MenuItem::linkToCrud('Students', 'fas fa-list', Student::class);
-        yield MenuItem::linkToCrud('User', 'fas fa-list', User::class);
+        #yield MenuItem::linkToCrud('Students', 'fas fa-list', Student::class);
+        if ( $this->current_role == 'ROLE_ADMIN')yield MenuItem::linkToCrud('Users', 'fas fa-list', User::class);
         yield MenuItem::linkToCrud('Modules', 'fas fa-list', Module::class);
         yield MenuItem::linkToCrud('Quizs', 'fas fa-list', Quiz::class);
-        yield MenuItem::linkToCrud('QuizMarks', 'fas fa-list', Quizmark::class);
+        if ( $this->current_role == 'ROLE_ADMIN')yield MenuItem::linkToCrud('QuizMarks', 'fas fa-list', Quizmark::class);
         yield MenuItem::linkToCrud('Subjects', 'fas fa-list', Subject::class);
         yield MenuItem::linkToCrud('Ressources', 'fas fa-list', Ressources::class);
     

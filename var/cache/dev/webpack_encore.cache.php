@@ -4,8 +4,38 @@
 
 return [[
 
+'_default' => 0,
 
 ], [
 
+0 => [
+    'entrypoints' => [
+        'app' => [
+            'js' => [
+                '/build/runtime.2816be4a.js',
+                '/build/755.e2552a6f.js',
+                '/build/674.aca35919.js',
+                '/build/app.8bfa3f80.js',
+            ],
+            'css' => [
+                '/build/app.ea80d697.css',
+            ],
+        ],
+        'langues' => [
+            'js' => [
+                '/build/runtime.2816be4a.js',
+                '/build/755.e2552a6f.js',
+                '/build/langues.d956d3ac.js',
+            ],
+        ],
+        'roles' => [
+            'js' => [
+                '/build/runtime.2816be4a.js',
+                '/build/755.e2552a6f.js',
+                '/build/roles.88dae33f.js',
+            ],
+        ],
+    ],
+],
 
 ]];

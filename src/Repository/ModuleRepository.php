@@ -19,9 +19,10 @@ class ModuleRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Module::class);
+        
     }
-
-    public function save(Module $entity, bool $flush = false): void
+}
+   /* public function save(Module $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -32,12 +33,14 @@ class ModuleRepository extends ServiceEntityRepository
 
     public function remove(Module $entity, bool $flush = false): void
     {
-        $this->getEntityManager()->remove($entity);
+        /*$this->getEntityManager()->remove($entity);
 
         if ($flush) {
             $this->getEntityManager()->flush();
-        }
-    }
+        }*/
+       
+        
+    //}
 
 //    /**
 //     * @return Module[] Returns an array of Module objects
@@ -63,4 +66,4 @@ class ModuleRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
-}
+//}

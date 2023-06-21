@@ -30,6 +30,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
             'search_form' => [$this, 'block_search_form'],
             'search_form_filters' => [$this, 'block_search_form_filters'],
             'langue_switcher' => [$this, 'block_langue_switcher'],
+            'role_switcher' => [$this, 'block_role_switcher'],
             'header_custom_menu' => [$this, 'block_header_custom_menu'],
             'responsive_header_logo' => [$this, 'block_responsive_header_logo'],
             'header_logo' => [$this, 'block_header_logo'],
@@ -74,7 +75,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         // line 5
         echo "\t<div class=\"content-search\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col-md-7\">
+\t\t\t<div class=\"col-md-3\">
 \t\t\t\t";
         // line 8
         if ((isset($context["has_search"]) || array_key_exists("has_search", $context) ? $context["has_search"] : (function () { throw new RuntimeError('Variable "has_search" does not exist.', 8, $this->source); })())) {
@@ -87,7 +88,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         // line 54
         echo "\t\t\t</div>
 \t\t\t<div
-\t\t\t\tclass=\"col-md-5\">
+\t\t\t\tclass=\"col-md-6\">
 
 \t\t\t\t";
         // line 59
@@ -98,14 +99,26 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         // line 63
         echo "
 \t\t\t</div>
+\t\t\t<div
+\t\t\t\tclass=\"col-md-3\">
+
+\t\t\t\t";
+        // line 69
+        echo "\t\t\t\t";
+        $this->displayBlock('role_switcher', $context, $blocks);
+        // line 72
+        echo "\t\t\t\t";
+        // line 73
+        echo "
+\t\t\t</div>
 \t\t</div>
 \t</div>
 
 \t<div class=\"navbar-custom-menu\">
 \t\t";
-        // line 69
+        // line 79
         $this->displayBlock('header_custom_menu', $context, $blocks);
-        // line 81
+        // line 91
         echo "\t</div>
 ";
         
@@ -322,6 +335,29 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
     }
 
     // line 69
+    public function block_role_switcher($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "role_switcher"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "role_switcher"));
+
+        // line 70
+        echo "\t\t\t\t\t";
+        $this->loadTemplate("changeRole.html.twig", "@EasyAdmin/layout.html.twig", 70)->display($context);
+        // line 71
+        echo "\t\t\t\t";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+    }
+
+    // line 79
     public function block_header_custom_menu($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -331,30 +367,30 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header_custom_menu"));
 
-        // line 70
+        // line 80
         echo "\t\t\t<div class=\"dropdown user-menu-wrapper ";
-        echo (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted((isset($context["impersonator_permission"]) || array_key_exists("impersonator_permission", $context) ? $context["impersonator_permission"] : (function () { throw new RuntimeError('Variable "impersonator_permission" does not exist.', 70, $this->source); })()))) ? ("user-is-impersonated") : (""));
+        echo (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted((isset($context["impersonator_permission"]) || array_key_exists("impersonator_permission", $context) ? $context["impersonator_permission"] : (function () { throw new RuntimeError('Variable "impersonator_permission" does not exist.', 80, $this->source); })()))) ? ("user-is-impersonated") : (""));
         echo "\">
 \t\t\t\t<a class=\"user-details\" type=\"button\" data-bs-toggle=\"dropdown\" data-bs-offset=\"0,5\" aria-expanded=\"false\">
 \t\t\t\t\t";
-        // line 72
-        echo twig_escape_filter($this->env, (isset($context["user_menu_avatar"]) || array_key_exists("user_menu_avatar", $context) ? $context["user_menu_avatar"] : (function () { throw new RuntimeError('Variable "user_menu_avatar" does not exist.', 72, $this->source); })()), "html", null, true);
+        // line 82
+        echo twig_escape_filter($this->env, (isset($context["user_menu_avatar"]) || array_key_exists("user_menu_avatar", $context) ? $context["user_menu_avatar"] : (function () { throw new RuntimeError('Variable "user_menu_avatar" does not exist.', 82, $this->source); })()), "html", null, true);
         echo "
 \t\t\t\t\t";
-        // line 73
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 73, $this->source); })()), "userMenu", [], "any", false, false, false, 73), "isNameDisplayed", [], "any", false, false, false, 73)) {
-            // line 74
+        // line 83
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 83, $this->source); })()), "userMenu", [], "any", false, false, false, 83), "isNameDisplayed", [], "any", false, false, false, 83)) {
+            // line 84
             echo "\t\t\t\t\t\t<span class=\"user-name\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 74, $this->source); })()), "userMenu", [], "any", false, false, false, 74), "name", [], "any", false, false, false, 74), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 84, $this->source); })()), "userMenu", [], "any", false, false, false, 84), "name", [], "any", false, false, false, 84), "html", null, true);
             echo "</span>
 \t\t\t\t\t";
         }
-        // line 76
+        // line 86
         echo "\t\t\t\t</a>
 
 \t\t\t\t";
-        // line 78
-        echo twig_escape_filter($this->env, (isset($context["user_menu_dropdown"]) || array_key_exists("user_menu_dropdown", $context) ? $context["user_menu_dropdown"] : (function () { throw new RuntimeError('Variable "user_menu_dropdown" does not exist.', 78, $this->source); })()), "html", null, true);
+        // line 88
+        echo twig_escape_filter($this->env, (isset($context["user_menu_dropdown"]) || array_key_exists("user_menu_dropdown", $context) ? $context["user_menu_dropdown"] : (function () { throw new RuntimeError('Variable "user_menu_dropdown" does not exist.', 88, $this->source); })()), "html", null, true);
         echo "
 \t\t\t</div>
 \t\t";
@@ -366,7 +402,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 
     }
 
-    // line 85
+    // line 95
     public function block_responsive_header_logo($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -376,11 +412,11 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "responsive_header_logo"));
 
-        // line 86
+        // line 96
         echo "\t<a class=\"responsive-logo\" title=\"";
-        echo twig_escape_filter($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 86, $this->source); })()), "dashboardTitle", [], "any", false, false, false, 86)), "html", null, true);
+        echo twig_escape_filter($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 96, $this->source); })()), "dashboardTitle", [], "any", false, false, false, 96)), "html", null, true);
         echo "\" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 86, $this->source); })()), "dashboardRouteName", [], "any", false, false, false, 86));
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 96, $this->source); })()), "dashboardRouteName", [], "any", false, false, false, 96));
         echo "\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col_md_12\" style=\"text-align:center\">
@@ -397,7 +433,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 
     }
 
-    // line 96
+    // line 106
     public function block_header_logo($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -407,11 +443,11 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "header_logo"));
 
-        // line 97
+        // line 107
         echo "\t<a class=\"logo\" title=\"";
-        echo twig_escape_filter($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 97, $this->source); })()), "dashboardTitle", [], "any", false, false, false, 97)), "html", null, true);
+        echo twig_escape_filter($this->env, twig_striptags(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 107, $this->source); })()), "dashboardTitle", [], "any", false, false, false, 107)), "html", null, true);
         echo "\" href=\"";
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 97, $this->source); })()), "dashboardRouteName", [], "any", false, false, false, 97));
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath(twig_get_attribute($this->env, $this->source, (isset($context["ea"]) || array_key_exists("ea", $context) ? $context["ea"] : (function () { throw new RuntimeError('Variable "ea" does not exist.', 107, $this->source); })()), "dashboardRouteName", [], "any", false, false, false, 107));
         echo "\">
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col_md_12\" style=\"text-align:center\">
@@ -440,7 +476,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 
     public function getDebugInfo()
     {
-        return array (  411 => 97,  401 => 96,  380 => 86,  370 => 85,  357 => 78,  353 => 76,  347 => 74,  345 => 73,  341 => 72,  335 => 70,  325 => 69,  315 => 61,  312 => 60,  302 => 59,  292 => 26,  286 => 25,  280 => 24,  270 => 22,  267 => 21,  252 => 19,  247 => 18,  244 => 17,  242 => 16,  237 => 15,  232 => 14,  222 => 13,  210 => 48,  202 => 44,  200 => 43,  190 => 40,  186 => 39,  177 => 33,  172 => 31,  168 => 30,  164 => 29,  160 => 27,  157 => 13,  147 => 12,  136 => 51,  134 => 12,  130 => 10,  120 => 9,  109 => 81,  107 => 69,  99 => 63,  97 => 62,  94 => 59,  88 => 54,  85 => 53,  82 => 9,  80 => 8,  75 => 5,  65 => 4,  42 => 1,);
+        return array (  447 => 107,  437 => 106,  416 => 96,  406 => 95,  393 => 88,  389 => 86,  383 => 84,  381 => 83,  377 => 82,  371 => 80,  361 => 79,  351 => 71,  348 => 70,  338 => 69,  328 => 61,  325 => 60,  315 => 59,  305 => 26,  299 => 25,  293 => 24,  283 => 22,  280 => 21,  265 => 19,  260 => 18,  257 => 17,  255 => 16,  250 => 15,  245 => 14,  235 => 13,  223 => 48,  215 => 44,  213 => 43,  203 => 40,  199 => 39,  190 => 33,  185 => 31,  181 => 30,  177 => 29,  173 => 27,  170 => 13,  160 => 12,  149 => 51,  147 => 12,  143 => 10,  133 => 9,  122 => 91,  120 => 79,  112 => 73,  110 => 72,  107 => 69,  100 => 63,  98 => 62,  95 => 59,  89 => 54,  86 => 53,  83 => 9,  81 => 8,  76 => 5,  66 => 4,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -451,7 +487,7 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 {% block content_top_header %}
 \t<div class=\"content-search\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col-md-7\">
+\t\t\t<div class=\"col-md-3\">
 \t\t\t\t{% if has_search %}
 \t\t\t\t\t{% block search %}
 
@@ -500,12 +536,22 @@ class __TwigTemplate_3d55068ff749ecdc822fa99e26c213d6 extends Template
 \t\t\t\t{% endif %}
 \t\t\t</div>
 \t\t\t<div
-\t\t\t\tclass=\"col-md-5\">
+\t\t\t\tclass=\"col-md-6\">
 
 \t\t\t\t{#   Modification effectuée sur le layout pour insérer le langue switcher #}
 \t\t\t\t{% block langue_switcher %}
 \t\t\t\t\t{% include 'changeLangue.html.twig' %}
 \t\t\t\t{% endblock langue_switcher %}
+\t\t\t\t{# fin de la modification #}
+
+\t\t\t</div>
+\t\t\t<div
+\t\t\t\tclass=\"col-md-3\">
+
+\t\t\t\t{#   Modification effectuée sur le layout pour insérer le langue switcher #}
+\t\t\t\t{% block role_switcher %}
+\t\t\t\t\t{% include 'changeRole.html.twig' %}
+\t\t\t\t{% endblock role_switcher %}
 \t\t\t\t{# fin de la modification #}
 
 \t\t\t</div>

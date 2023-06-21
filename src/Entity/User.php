@@ -35,17 +35,20 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 10)]
     private ?string $locale = 'fr';
 
-    #[ORM\Column]
+    /*#[ORM\Column]
     private ?bool $is_verified = false;
-
+    */
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $country = null;
 
     #[ORM\OneToOne(mappedBy: 'user', cascade: ['persist', 'remove'])]
     private ?Student $student = null;
 
-    /*#[ORM\Column(type: 'boolean')]
-    private $isVerified = false;*/
+    #[ORM\Column(type: 'boolean')]
+    private $isVerified = false;
+
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    private ?student $studnt = null;
 
     public function getId(): ?int
     {
@@ -141,7 +144,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function isIsVerified(): ?bool
+    /*public function isIsVerified(): ?bool
     {
         return $this->is_verified;
     }
@@ -151,7 +154,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->is_verified = $is_verified;
 
         return $this;
-    }
+    }*/
 
     public function getCountry(): ?string
     {
@@ -164,12 +167,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
-    /*
+    
     public function isVerified(): bool
     {
         return $this->isVerified;
-    }*/
-
+    }
     public function getStudent(): ?Student
     {
         return $this->student;
@@ -183,6 +185,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         }
 
         $this->student = $student;
+
+        return $this;
+    }
+    public function setIsVerified(bool $is_verified): static
+    {
+        $this->isVerified = $is_verified;
+
+        return $this;
+    }
+
+    public function getStudnt(): ?student
+    {
+        return $this->studnt;
+    }
+
+    public function setStudnt(?student $studnt): static
+    {
+        $this->studnt = $studnt;
 
         return $this;
     }

@@ -205,10 +205,14 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t<p> you don't have an account? <a href=\"";
+\t\t\t<p>Did you forget your password ?<a  href=\"";
         // line 83
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_forgot_password_request");
+        echo "\">Click here to reset</a></p>
+\t\t\t<p>You don't have an account ?<a href=\"";
+        // line 84
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-        echo "\">click here to register </a></p>
+        echo "\">click here to register</a></p>
 \t\t\t</section>
 \t\t</form>
 \t\t
@@ -233,7 +237,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 
     public function getDebugInfo()
     {
-        return array (  210 => 83,  198 => 74,  194 => 73,  190 => 72,  181 => 66,  176 => 64,  171 => 62,  164 => 58,  151 => 48,  136 => 38,  124 => 28,  122 => 27,  112 => 20,  103 => 13,  97 => 11,  95 => 10,  90 => 7,  80 => 6,  59 => 3,  36 => 1,);
+        return array (  214 => 84,  210 => 83,  198 => 74,  194 => 73,  190 => 72,  181 => 66,  176 => 64,  171 => 62,  164 => 58,  151 => 48,  136 => 38,  124 => 28,  122 => 27,  112 => 20,  103 => 13,  97 => 11,  95 => 10,  90 => 7,  80 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -320,7 +324,8 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
-\t\t\t<p> you don't have an account? <a href=\"{{path('app_register')}}\">click here to register </a></p>
+\t\t\t<p>Did you forget your password ?<a  href=\"{{path('app_forgot_password_request')}}\">Click here to reset</a></p>
+\t\t\t<p>You don't have an account ?<a href=\"{{path('app_register')}}\">click here to register</a></p>
 \t\t\t</section>
 \t\t</form>
 \t\t

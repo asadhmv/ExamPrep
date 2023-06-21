@@ -542,6 +542,12 @@ $catalogueFr = new MessageCatalogue('fr', array (
   ),
   'messages' => 
   array (
+    'ROLE_USER' => 'Utilisateur',
+    'ROLE_APOGE' => 'Service APOGE',
+    'ROLE_ADMIN' => 'Administrateur',
+    'ROLE_PROF' => 'Professeur',
+    'ROLE_ETUDIANT' => 'Etudiant',
+    'ROLE_CHEF' => 'Chef de Filière',
     'Students' => 'Etudiants',
     'Etudiants' => 'Etudiants',
     'Filieres' => 'Filières',
@@ -853,6 +859,12 @@ $catalogueEn = new MessageCatalogue('en', array (
   ),
   'messages' => 
   array (
+    'ROLE_USER' => 'Users',
+    'ROLE_APOGE' => 'APOGE',
+    'ROLE_ADMIN' => 'Administrator',
+    'ROLE_PROF' => 'Teacher',
+    'ROLE_ETUDIANT' => 'Student',
+    'ROLE_CHEF' => 'Sector Admin',
     'Etudiants' => 'Students',
     'Modules' => 'Modules',
     'Utilisateur' => 'User',

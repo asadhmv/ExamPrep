@@ -61,6 +61,12 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 use Symfony\Component\Security\Core\Exception\InvalidCsrfTokenException;
 use function Symfony\Component\String\u;
+use App\Entity\Module;
+use App\Entity\Subject;
+use App\Entity\Quiz;
+use App\Entity\Quizmark;
+use App\Entity\Ressources;
+use App\Entity\User;
 
 /**
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
@@ -369,6 +375,7 @@ abstract class AbstractCrudController extends AbstractController implements Crud
 
         try {
             $this->deleteEntity($this->container->get('doctrine')->getManagerForClass($context->getEntity()->getFqcn()), $entityInstance);
+            ;
         } catch (ForeignKeyConstraintViolationException $e) {
             throw new EntityRemoveException(['entity_name' => $context->getEntity()->getName(), 'message' => $e->getMessage()]);
         }
@@ -499,25 +506,58 @@ abstract class AbstractCrudController extends AbstractController implements Crud
 
     public function createEntity(string $entityFqcn)
     {
+       
         return new $entityFqcn();
     }
 
     public function updateEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        $entityManager->persist($entityInstance);
-        $entityManager->flush();
+        if ($this->isGranted('ROLE_ADMIN')) {
+            $entityManager->persist($entityInstance);
+            $entityManager->flush();
+        }
+        elseif ($entityInstance instanceof Module || $entityInstance instanceof Subject || $entityInstance instanceof Quizmark) {
+            return;
+        }
+        else{
+            $entityManager->persist($entityInstance);
+            $entityManager->flush();
+        }
     }
 
     public function persistEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        $entityManager->persist($entityInstance);
-        $entityManager->flush();
+        if ($this->isGranted('ROLE_ADMIN')) {
+            $entityManager->persist($entityInstance);
+            $entityManager->flush();
+        }
+        elseif ($entityInstance instanceof Subject || $entityInstance instanceof Quizmark) {
+            return;
+        }
+        else{
+            $entityManager->persist($entityInstance);
+            $entityManager->flush();
+        }
     }
 
     public function deleteEntity(EntityManagerInterface $entityManager, $entityInstance): void
     {
-        $entityManager->remove($entityInstance);
-        $entityManager->flush();
+        if ($this->isGranted('ROLE_ADMIN')) {
+            $entityManager->remove($entityInstance);
+            $entityManager->flush();
+        }
+        elseif ($entityInstance instanceof Module || $entityInstance instanceof Subject || $entityInstance instanceof Quizmark) {
+            return;
+        }
+        else{
+            $user = $this->getUser();
+            if ($user !== $entityInstance->getCreator()) {
+                return;
+            }
+            $entityManager->persist($entityInstance);
+            $entityManager->flush();
+        }
+        
     }
 
     public function createEditForm(EntityDto $entityDto, KeyValueStore $formOptions, AdminContext $context): FormInterface

@@ -11,7 +11,7 @@ class QuizCrudController extends AbstractCrudController
     {
         return Quiz::class;
     }
-
+   
     /*
     public function configureFields(string $pageName): iterable
     {
