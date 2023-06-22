@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .js{
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .navbar {
+            background: #000;
+            border-radius: 0;
+        }
+
+        .navbar-brand {
+            padding: 40px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .navbar-btn {
+            background: linear-gradient(to right, #008080, #000080);
+            color: #000;
+            margin-right: 5px;
+            
+            border: none;
+            padding: 3px 3px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 1s ease-in-out;
+            box-shadow: 0 0 5px #007bff;
+        }
+        .navbar-btn :hover{
+            background: linear-gradient(to right, #008000, #008080);
+            transition: 1s ease-in-out;
+            box-shadow: 0 0 5px #007bff;
+        }
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 3; /* Place l'image dans la deuxième ligne */
+            justify-self: center; /* Centre l'image horizontalement */
+            margin: 200px; /* Ajoute une marge pour l'espace */
+            position: absolute;
+            top:90%;
+            left: 0%;
+            bottom: 100%;
+            width: 70%;
+            height:60%;
+        }
+        .image-container img{
+            width:100%;
+            height: auto;   
+        }
+    </style>
+</head>
+<body>
+    <div class="js">
+        <canvas id= "canvas_home"> Votre navigateur ne prends pas en charge l'animation</canvas>
+            {% block javascripts %}
+                    {{ encore_entry_script_tags('anim')}}
+            {% endblock %}
+    </div>
+    <nav class="navbar navbar-default">
+        
+        <div class="container">
+            <div class= "image-container">
+                <img class="image" src="{{asset("build/images/draw3.png")}}" alt="Image">
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{path('app_home')}}">
+                    <img src="{{asset("build/images/logo2.png")}}" alt="Image">
+                </a>
+            </div>
+            <div class= "image-container">
+                <img class="image" src="{{asset("build/images/draw3.png")}}" alt="Image">
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="navbar-btn" href="{{ path('app_register') }}">Register</a></li>
+                <li><a class="navbar-btn" href="{{ path('app_login') }}">Login</a></li>
+            </ul>
+            
+        </div>
+{% endblock %}
+
