@@ -12,27 +12,34 @@ return [[
     'entrypoints' => [
         'app' => [
             'js' => [
-                '/build/runtime.2816be4a.js',
-                '/build/755.e2552a6f.js',
-                '/build/674.aca35919.js',
-                '/build/app.8bfa3f80.js',
+                '/build/runtime.js',
+                '/build/vendors-node_modules_jquery_dist_jquery_js.js',
+                '/build/vendors-node_modules_fortawesome_fontawesome-free_js_brands_js-node_modules_fortawesome_fonta-0173da.js',
+                '/build/app.js',
             ],
             'css' => [
-                '/build/app.ea80d697.css',
+                '/build/app.css',
             ],
         ],
         'langues' => [
             'js' => [
-                '/build/runtime.2816be4a.js',
-                '/build/755.e2552a6f.js',
-                '/build/langues.d956d3ac.js',
+                '/build/runtime.js',
+                '/build/vendors-node_modules_jquery_dist_jquery_js.js',
+                '/build/langues.js',
             ],
         ],
         'roles' => [
             'js' => [
-                '/build/runtime.2816be4a.js',
-                '/build/755.e2552a6f.js',
-                '/build/roles.88dae33f.js',
+                '/build/runtime.js',
+                '/build/vendors-node_modules_jquery_dist_jquery_js.js',
+                '/build/roles.js',
+            ],
+        ],
+        'anim' => [
+            'js' => [
+                '/build/runtime.js',
+                '/build/vendors-node_modules_core-js_modules_es_array_fill_js-node_modules_core-js_modules_es_array_p-7bcc47.js',
+                '/build/anim.js',
             ],
         ],
     ],

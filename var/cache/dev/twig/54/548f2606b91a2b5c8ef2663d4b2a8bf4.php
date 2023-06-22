@@ -105,6 +105,14 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
             top:0;
             left:0;
         }
+        .navbar-brand {
+            padding: 40px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
+        }
         
         h1{
             color:#fff;
@@ -205,7 +213,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 
     }
 
-    // line 113
+    // line 121
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -215,26 +223,39 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 114
+        // line 122
         echo "\t<div class=\"js\">
         <canvas id= \"canvas_login\"> Votre navigateur ne prends pas en charge l'animation</canvas>
             ";
-        // line 116
+        // line 124
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 119
+        // line 127
         echo "    </div>
+    <nav class=\"navbar navbar-default\">
+        <div class=\"navbar-header\">
+            <a class=\"navbar-brand\" href=\"";
+        // line 130
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">
+                <img src=\"";
+        // line 131
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/logo2.png"), "html", null, true);
+        echo "\" alt=\"Image\">
+            </a>
+        </div>
+    </nav>
 
 \t<form method=\"post\" >
 \t\t";
-        // line 122
-        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 122, $this->source); })())) {
-            // line 123
+        // line 137
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 137, $this->source); })())) {
+            // line 138
             echo "\t\t\t<div class=\"alert alert-danger\" >";
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 123, $this->source); })()), "messageKey", [], "any", false, false, false, 123), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 123, $this->source); })()), "messageData", [], "any", false, false, false, 123), "security"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 138, $this->source); })()), "messageKey", [], "any", false, false, false, 138), twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new RuntimeError('Variable "error" does not exist.', 138, $this->source); })()), "messageData", [], "any", false, false, false, 138), "security"), "html", null, true);
             echo "</div>
 \t\t";
         }
-        // line 125
+        // line 140
         echo "\t\t<br><br><br>
 \t\t<section class=\"vh-100\">
 
@@ -243,7 +264,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t<div class=\"row d-flex justify-content-center align-items-center h-100\">
 \t\t\t\t\t<div class=\"col-md-9 col-lg-6 col-xl-5\">
 \t\t\t\t\t\t<!--img src=\"";
-        // line 132
+        // line 147
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/draw2.png"), "html", null, true);
         echo "\" class=\"img-fluid\" alt=\"Sample image\"-->
 \t\t\t\t\t</div>
@@ -254,9 +275,9 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t\t<div class=\"input-group mb-3\">
 \t\t\t\t\t\t\t\t<div style=\"width:100%;text-align:center\">
 \t\t\t\t\t\t\t\t ";
-        // line 140
-        $this->loadTemplate("changeLangue.html.twig", "security/login.html.twig", 140)->display($context);
-        // line 141
+        // line 155
+        $this->loadTemplate("changeLangue.html.twig", "security/login.html.twig", 155)->display($context);
+        // line 156
         echo "\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<!-- Email input -->
@@ -268,8 +289,8 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<input type=\"email\" value=\"";
-        // line 151
-        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 151, $this->source); })()), "html", null, true);
+        // line 166
+        echo twig_escape_filter($this->env, (isset($context["last_username"]) || array_key_exists("last_username", $context) ? $context["last_username"] : (function () { throw new RuntimeError('Variable "last_username" does not exist.', 166, $this->source); })()), "html", null, true);
         echo "\" name=\"email\" id=\"inputEmail\" class=\"form-control  form-control-lg\" placeholder=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.email"), "html", null, true);
         echo "\" required autofocus>
@@ -283,7 +304,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t\t\t\t</span>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t<input type=\"password\" name=\"password\" id=\"inputPassword\" class=\"form-control  form-control-lg\" placeholder=\"";
-        // line 161
+        // line 176
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.password"), "html", null, true);
         echo "\" required>
 \t\t\t\t\t\t\t</div>
@@ -296,24 +317,24 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t\t\t\t<input class=\"form-check-input me-2\" type=\"checkbox\" value=\"\" id=\"form2Example3\"/>
 \t\t\t\t\t\t\t\t\t<label class=\"form-check-label\" for=\"form2Example3\">
 \t\t\t\t\t\t\t\t\t\t";
-        // line 171
+        // line 186
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.remember-me"), "html", null, true);
         echo "
 \t\t\t\t\t\t\t\t\t</label>
 \t\t\t\t\t\t\t\t</div>
 
 \t\t\t\t\t\t\t\t<a href=\"";
-        // line 175
+        // line 190
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_forgot_password_request");
         echo "\" class=\"text-body\">
 \t\t\t\t\t\t\t\t\t<i class=\"fa fa-question-circle\" aria-hidden=\"true\"></i>
 \t\t\t\t\t\t\t\t\t";
-        // line 177
+        // line 192
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.forgetten-password"), "html", null, true);
         echo "</a>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<input type=\"hidden\" name=\"_csrf_token\" value=\"";
-        // line 179
+        // line 194
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\">
 \t\t\t\t\t\t\t<div class=\"text-center text-lg-start mt-4 pt-2\">
@@ -322,26 +343,26 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 \t\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary btn-lg\" style=\"padding-left: 2.5rem; padding-right: 2.5rem;\">
 \t\t\t\t\t\t\t\t\t<i class=\"fa fa-chevron-circle-right\" aria-hidden=\"true\"></i>
 \t\t\t\t\t\t\t\t\t";
-        // line 185
+        // line 200
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.login"), "html", null, true);
         echo "</button>
 \t\t\t\t\t\t\t\t<!-- <p class=\"small fw-bold mt-2 pt-1 mb-0\">";
-        // line 186
+        // line 201
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.dont-have-account"), "html", null, true);
         echo "
 \t\t\t\t\t\t\t\t\t<a href=\"register\" class=\"link-danger\">";
-        // line 187
+        // line 202
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.register"), "html", null, true);
         echo "</a>
 \t\t\t\t\t\t\t\t</p> -->
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t<p class= \"login-txt\">Did you forget your password ?<a  href=\"";
-        // line 190
+        // line 205
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_forgot_password_request");
         echo "\" class= \"password-link\">Click here to reset</a></p>
 \t\t\t
 \t\t\t\t\t\t\t<p class=\"login-txt\"> you don't have an account? <a href=\"";
-        // line 192
+        // line 207
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
         echo "\" class= \"login-link\">click here to register </a></p>
 
@@ -360,7 +381,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 
     }
 
-    // line 116
+    // line 124
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -370,7 +391,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 117
+        // line 125
         echo "                    ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("anim");
         echo "
@@ -395,7 +416,7 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
 
     public function getDebugInfo()
     {
-        return array (  374 => 117,  364 => 116,  345 => 192,  340 => 190,  334 => 187,  330 => 186,  326 => 185,  317 => 179,  312 => 177,  307 => 175,  300 => 171,  287 => 161,  272 => 151,  260 => 141,  258 => 140,  247 => 132,  238 => 125,  232 => 123,  230 => 122,  225 => 119,  223 => 116,  219 => 114,  209 => 113,  92 => 6,  82 => 5,  61 => 3,  38 => 1,);
+        return array (  395 => 125,  385 => 124,  366 => 207,  361 => 205,  355 => 202,  351 => 201,  347 => 200,  338 => 194,  333 => 192,  328 => 190,  321 => 186,  308 => 176,  293 => 166,  281 => 156,  279 => 155,  268 => 147,  259 => 140,  253 => 138,  251 => 137,  242 => 131,  238 => 130,  233 => 127,  231 => 124,  227 => 122,  217 => 121,  92 => 6,  82 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -418,6 +439,14 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
             position: absolute;
             top:0;
             left:0;
+        }
+        .navbar-brand {
+            padding: 40px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
         }
         
         h1{
@@ -519,6 +548,13 @@ class __TwigTemplate_828e37f13ac750941ccfb0ec88b78de0 extends Template
                     {{ encore_entry_script_tags('anim')}}
             {% endblock %}
     </div>
+    <nav class=\"navbar navbar-default\">
+        <div class=\"navbar-header\">
+            <a class=\"navbar-brand\" href=\"{{path('app_home')}}\">
+                <img src=\"{{asset(\"build/images/logo2.png\")}}\" alt=\"Image\">
+            </a>
+        </div>
+    </nav>
 
 \t<form method=\"post\" >
 \t\t{% if error %}

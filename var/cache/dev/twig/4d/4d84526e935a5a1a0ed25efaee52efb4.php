@@ -52,7 +52,10 @@ class __TwigTemplate_ae3c82f66a463e450d69be7e8be02475 extends Template
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"icon\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/logo2.png"), "html", null, true);
+        echo "\">
         ";
         // line 7
         $this->displayBlock('stylesheets', $context, $blocks);
@@ -167,9 +170,14 @@ class __TwigTemplate_ae3c82f66a463e450d69be7e8be02475 extends Template
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  148 => 16,  135 => 12,  125 => 11,  112 => 8,  102 => 7,  83 => 5,  71 => 17,  69 => 16,  65 => 14,  63 => 11,  60 => 10,  58 => 7,  53 => 5,  47 => 1,);
+        return array (  151 => 16,  138 => 12,  128 => 11,  115 => 8,  105 => 7,  86 => 5,  74 => 17,  72 => 16,  68 => 14,  66 => 11,  63 => 10,  61 => 7,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -179,7 +187,7 @@ class __TwigTemplate_ae3c82f66a463e450d69be7e8be02475 extends Template
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"icon\" href=\"{{asset(\"build/images/logo2.png\")}}\">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}

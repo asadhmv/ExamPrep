@@ -8,13 +8,12 @@
   "build/vendors-node_modules_jquery_dist_jquery_js.js": "/build/vendors-node_modules_jquery_dist_jquery_js.js",
   "build/vendors-node_modules_core-js_modules_es_array_fill_js-node_modules_core-js_modules_es_array_p-7bcc47.js": "/build/vendors-node_modules_core-js_modules_es_array_fill_js-node_modules_core-js_modules_es_array_p-7bcc47.js",
   "build/vendors-node_modules_fortawesome_fontawesome-free_js_brands_js-node_modules_fortawesome_fonta-0173da.js": "/build/vendors-node_modules_fortawesome_fontawesome-free_js_brands_js-node_modules_fortawesome_fonta-0173da.js",
-  "build/images/draw2.png": "/build/images/draw2.png",
   "build/images/en.png": "/build/images/en.png",
   "build/images/es.png": "/build/images/es.png",
   "build/images/ar.png": "/build/images/ar.png",
+  "build/images/logo2.png": "/build/images/logo2.png",
   "build/images/draw1.webp": "/build/images/draw1.webp",
-  "build/images/logo.png": "/build/images/logo.png",
   "build/images/fr.png": "/build/images/fr.png",
-  "build/images/draw2.svg": "/build/images/draw2.svg",
+  "build/images/draw3.png": "/build/images/draw3.png",
   "build/css/admin.css": "/build/css/admin.css"
 }

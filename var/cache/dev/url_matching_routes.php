@@ -19,12 +19,14 @@ return [
         '/changeLocale' => [[['_route' => 'changeLocale', '_controller' => 'App\\Controller\\ChangeLangueController::changeLocale'], null, null, null, false, false, null]],
         '/change_role' => [[['_route' => 'change_role', '_controller' => 'App\\Controller\\ChangeRoleController::index'], null, null, null, false, false, null]],
         '/changeRole' => [[['_route' => 'changeRole', '_controller' => 'App\\Controller\\ChangeRoleController::changeRole'], null, null, null, false, false, null]],
+        '/home' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/verify/email' => [[['_route' => 'app_verify_email', '_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], null, null, null, false, false, null]],
         '/reset-password' => [[['_route' => 'app_forgot_password_request', '_controller' => 'App\\Controller\\ResetPasswordController::request'], null, null, null, false, false, null]],
         '/reset-password/check-email' => [[['_route' => 'app_check_email', '_controller' => 'App\\Controller\\ResetPasswordController::checkEmail'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

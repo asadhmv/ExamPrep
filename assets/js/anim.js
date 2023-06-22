@@ -12,8 +12,16 @@ if(document.getElementById("canvas_register")!= null){
     canvas.height = innerHeight;
     size_ = 3;
    }
+   else if(document.getElementById("canvas_home")!= null){
+    canvas = document.getElementById("canvas_home");
+    ctx = canvas.getContext('2d');
+    canvas.width = innerWidth - 20;
+    canvas.height = innerHeight;
+    size_ = 3;
+   }
    console.log(document.getElementById("canvas_register"));
    console.log(document.getElementById("canvas_login"));
+   console.log(document.getElementById("canvas_home"));
    console.log(ctx);
    
    
@@ -100,7 +108,7 @@ if(document.getElementById("canvas_register")!= null){
     let y = (Math.random() * ((innerHeight - size * 2) -(size * 2)) + size * 2);
     let directionX = (Math.random() * 5) - 2.5;
     let directionY = (Math.random() * 5) - 2.5;
-    let bleu = '#26caf8';
+    let bleu = '#00008B';
     let violet = '#c625d0'
     let blanc = '#ffffff';
     let colors = [bleu, violet, blanc];

@@ -21,6 +21,7 @@ return [
     'changeLocale' => [[], ['_controller' => 'App\\Controller\\ChangeLangueController::changeLocale'], [], [['text', '/changeLocale']], [], [], []],
     'change_role' => [[], ['_controller' => 'App\\Controller\\ChangeRoleController::index'], [], [['text', '/change_role']], [], [], []],
     'changeRole' => [[], ['_controller' => 'App\\Controller\\ChangeRoleController::changeRole'], [], [['text', '/changeRole']], [], [], []],
+    'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/home']], [], [], []],
     'app_register' => [[], ['_controller' => 'App\\Controller\\RegistrationController::register'], [], [['text', '/register']], [], [], []],
     'app_verify_email' => [[], ['_controller' => 'App\\Controller\\RegistrationController::verifyUserEmail'], [], [['text', '/verify/email']], [], [], []],
     'app_forgot_password_request' => [[], ['_controller' => 'App\\Controller\\ResetPasswordController::request'], [], [['text', '/reset-password']], [], [], []],
@@ -28,4 +29,5 @@ return [
     'app_reset_password' => [['token'], ['token' => null, '_controller' => 'App\\Controller\\ResetPasswordController::reset'], [], [['variable', '/', '[^/]++', 'token', true], ['text', '/reset-password/reset']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
+    'index' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
 ];

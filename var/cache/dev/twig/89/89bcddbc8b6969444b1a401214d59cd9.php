@@ -104,6 +104,14 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
             top:0;
             left:0;
         }
+        .navbar-brand {
+            padding: 40px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
+        }
         body {
             
             justify-content: center;
@@ -180,9 +188,8 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
             background-color: linear-gradient(to right, #0033a0, #007bff);
         }
 
-        .login-link {
-
-            
+        .login-link
+         {
             background: linear-gradient(to right, #FFFF00, #FFA500);
             display: inline-block;
             color: #fff;
@@ -210,7 +217,7 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
 
     }
 
-    // line 119
+    // line 126
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -220,12 +227,12 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 120
+        // line 127
         echo "    ";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 120, $this->source); })()), "flashes", [0 => "verify_email_error"], "method", false, false, false, 120));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 127, $this->source); })()), "flashes", [0 => "verify_email_error"], "method", false, false, false, 127));
         foreach ($context['_seq'] as $context["_key"] => $context["flash_error"]) {
-            // line 121
+            // line 128
             echo "        <div class=\"alert alert-danger\" role=\"alert\">";
             echo twig_escape_filter($this->env, $context["flash_error"], "html", null, true);
             echo "</div>
@@ -234,49 +241,62 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['flash_error'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 123
+        // line 130
         echo "     
     <div class=\"js\">
         <canvas id= \"canvas_register\"> Votre navigateur ne prends pas en charge l'animation</canvas>
             ";
-        // line 126
+        // line 133
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 129
+        // line 136
         echo "    </div>
+    <nav class=\"navbar navbar-default\">
+        <div class=\"navbar-header\">
+            <a class=\"navbar-brand\" href=\"";
+        // line 139
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">
+                <img src=\"";
+        // line 140
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("build/images/logo2.png"), "html", null, true);
+        echo "\" alt=\"Image\">
+            </a>
+        </div>
+    </nav>
     <div class=\"test\">
         <h1 style=\"font-family: 'Bookman', serif; color: #fff;\">Register</h1>
         <div class=\"register-form\">
             
             ";
-        // line 134
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 134, $this->source); })()), 'errors');
+        // line 148
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 148, $this->source); })()), 'errors');
         echo "
 
             ";
-        // line 136
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 136, $this->source); })()), 'form_start');
+        // line 150
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 150, $this->source); })()), 'form_start');
         echo "
                 ";
-        // line 137
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 137, $this->source); })()), "email", [], "any", false, false, false, 137), 'row');
+        // line 151
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 151, $this->source); })()), "email", [], "any", false, false, false, 151), 'row');
         echo "
                 ";
-        // line 138
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 138, $this->source); })()), "plainPassword", [], "any", false, false, false, 138), 'row', ["label" => "Password"]);
-        // line 140
+        // line 152
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 152, $this->source); })()), "plainPassword", [], "any", false, false, false, 152), 'row', ["label" => "Password"]);
+        // line 154
         echo "
                 ";
-        // line 141
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 141, $this->source); })()), "agreeTerms", [], "any", false, false, false, 141), 'row');
+        // line 155
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 155, $this->source); })()), "agreeTerms", [], "any", false, false, false, 155), 'row');
         echo "
 
                 <button type=\"submit\" class=\"btn\">Register</button>
             ";
-        // line 144
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 144, $this->source); })()), 'form_end');
+        // line 158
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 158, $this->source); })()), 'form_end');
         echo "
             <p>Do you already have an email ?</p><a href=\"";
-        // line 145
+        // line 159
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
         echo "\">click here login</a></p>
         </div>
@@ -291,7 +311,7 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
 
     }
 
-    // line 126
+    // line 133
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -301,7 +321,7 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 127
+        // line 134
         echo "                    ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("anim");
         echo "
@@ -326,7 +346,7 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
 
     public function getDebugInfo()
     {
-        return array (  305 => 127,  295 => 126,  280 => 145,  276 => 144,  270 => 141,  267 => 140,  265 => 138,  261 => 137,  257 => 136,  252 => 134,  245 => 129,  243 => 126,  238 => 123,  229 => 121,  224 => 120,  214 => 119,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  325 => 134,  315 => 133,  300 => 159,  296 => 158,  290 => 155,  287 => 154,  285 => 152,  281 => 151,  277 => 150,  272 => 148,  261 => 140,  257 => 139,  252 => 136,  250 => 133,  245 => 130,  236 => 128,  231 => 127,  221 => 126,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -350,6 +370,14 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
             position: absolute;
             top:0;
             left:0;
+        }
+        .navbar-brand {
+            padding: 40px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
         }
         body {
             
@@ -427,9 +455,8 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
             background-color: linear-gradient(to right, #0033a0, #007bff);
         }
 
-        .login-link {
-
-            
+        .login-link
+         {
             background: linear-gradient(to right, #FFFF00, #FFA500);
             display: inline-block;
             color: #fff;
@@ -460,6 +487,13 @@ class __TwigTemplate_66db1d569251fe9d8e9b673ea17e770a extends Template
                     {{ encore_entry_script_tags('anim')}}
             {% endblock %}
     </div>
+    <nav class=\"navbar navbar-default\">
+        <div class=\"navbar-header\">
+            <a class=\"navbar-brand\" href=\"{{path('app_home')}}\">
+                <img src=\"{{asset(\"build/images/logo2.png\")}}\" alt=\"Image\">
+            </a>
+        </div>
+    </nav>
     <div class=\"test\">
         <h1 style=\"font-family: 'Bookman', serif; color: #fff;\">Register</h1>
         <div class=\"register-form\">
